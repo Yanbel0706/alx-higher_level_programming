@@ -7,4 +7,4 @@ def weight_average(my_list=[]):
     for tup in my_list:
         number += tup[0] * tup[1]
         den += tup[1]
-     return (number / den)
+    return (number / den)
