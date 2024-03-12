@@ -1,3 +1,6 @@
+#include <time.h>  
+struct timespec;
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <Python.h>
@@ -40,7 +43,7 @@ void print_python_bytes(PyObject *p)
 		return;
 	}
 	size = ((PyVarObject *)p)->ob_size;
-	str = ((PyBiytesObject *)p)->ob_sval;
+	str = ((PyBytesObject *)p)->ob_sval;
 	length = size + 1 > 10 ? 10 : size + 1;
 	printf("  size: %lu\n", size);
 	printf("  trying string: %s\n", str);
