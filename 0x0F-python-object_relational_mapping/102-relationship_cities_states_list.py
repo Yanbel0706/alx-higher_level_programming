@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" 
-Module that prints the State object with the name passed as argument from the database
+"""
+Prints the State object with the name passed as argument from the database
 """
 import sys
 from relationship_state import Base, State

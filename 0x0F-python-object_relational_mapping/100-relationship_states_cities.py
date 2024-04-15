@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This Module creates the State "California" with the City "San Francisco" from a DB
+Module creates the State "California" with the City "San Francisco" from a DB
 """
 import sys
 from relationship_state import Base, State
